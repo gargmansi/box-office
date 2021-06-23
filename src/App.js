@@ -1,9 +1,13 @@
 import React from "react";
 import { Switch, Route } from 'react-router-dom'
-
+import Navs from './components1/Navs';
 function App() {
   return (
-    <switch>
+    <div>
+      <Navs />
+
+    
+    <Switch>
       <Route exact path="/">
         This is home page 
       </Route>
@@ -12,7 +16,8 @@ function App() {
       </Route>
       <Route>this is 404 page</Route>
 
-    </switch>
+    </Switch>
+    </div>
   );
 
   
